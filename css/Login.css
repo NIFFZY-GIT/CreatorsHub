@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+/*	background: url("bglogin.jpg")no-repeat;*/
+	background-color: #1E1E1E;
+    background-position: center;
+    background-size: cover;
+}
+
+.bgvid{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+@media (min-aspect-ratio: 16/9){
+	.bgvid{
+		width:100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9){
+	.bgvid{
+		width:auto;
+		height: 100%;
+	}
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+	backdrop-filter: blur(15px);
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #ffce00;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #ffce00;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffce00;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:valid ~ label,
+input:focus ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    /*font-weight: 100;*/
+	font-size: .9em;
+	
+}
+
+.forget{
+    margin: -15px 0 15px ;
+	text-align: center;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+/*	text-align: center;*/
+    
+}
+.forget label a{
+    color: #ffce00;
+    text-decoration: none;
+	/*text-align: center;*/
+	
+}
+.forget label a:hover{
+    text-decoration: underline;
+	color: #EDA0FF;
+}
+button{
+    width: 25%;
+    height: 40px;
+    border-radius: 40px;
+    background: #323232;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+	color: #ffce00;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    /*font-weight: 100;*/
+	font-size: .9em;
+	
+}
+.register p a:hover{
+    text-decoration: underline;
+	color: #ffce00;
+}
+.form-box button:hover{
+  background: #323232 ;
+	color: white;
+	transition-duration: 0.6s;
+	width:50%;
+}
+	
+
